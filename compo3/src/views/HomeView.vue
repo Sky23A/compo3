@@ -1,17 +1,10 @@
 <template>
-  <div class="event">
-    <EventCard v-for="event in events" :key="event.id" :event="event"/>
+  <div class="events">
+    <EventCard v-for="event in events" :key="event.id" :event="event" />
   </div>
 </template>
-<script>
-<style scoped>
-.events {
-  display: flex;
-  flex-direction: column;
-  align-items : center;
-}
-</style>
 
+<script>
 // @ is an alias to /src
 
 import EventCard from '@/components/EventCard.vue'
@@ -62,3 +55,10 @@ export default {
   },
 }
 </script>
+<style scoped>
+.events {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+</style>
